@@ -10,7 +10,7 @@ object bolichito {
 	method esBrillante() { 
 		const elDeMostradorBrilla = true   // implementar
 		const elDeVidrieraBrilla = true   // implementar
-		return elDeMostradorBrilla and elDeVidrieraBrilla
+		return "mostrador "+elDeMostradorBrilla and "vidriera "+elDeVidrieraBrilla
 	}
 	
 	method esMonocromatico() {
@@ -18,14 +18,15 @@ object bolichito {
 	}
 	
 	method estaDesequilibrado() {
-		// completar
+		return objetoEnMostrador>objetoEnVidriera 
 	}
 	
 	method tieneAlgoDeColor(color) {
-		// completar
+		
+		return objetoEnMostrador.color()== color or objetoEnVidriera.color()== color
+		 
 	}
 
 	method puedeOfrecerleAlgoA(persona) {
-		// completar
 	}
 }
